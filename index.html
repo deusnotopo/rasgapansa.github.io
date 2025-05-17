@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manual de Uso - Combo Emagrecimento Natural</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        .health-gradient {
+            background: linear-gradient(135deg, #3b82f6 0%, #10b981 100%);
+        }
+        
+        .supplement-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+        }
+        
+        .tab-button {
+            transition: all 0.3s ease;
+        }
+        
+        .tab-button.active {
+            background-color: #3b82f6;
+            color: white;
+        }
+        
+        .dosage-table tr:nth-child(even) {
+            background-color: #f8fafc;
+        }
+        
+        .warning-pulse {
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.03); }
+            100% { transform: scale(1); }
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+    <!-- Cover Page -->
+    <div class="health-gradient text-white py-16 md:py-24 px-4 text-center">
+        <div class="max-w-4xl mx-auto">
+            <div class="inline-block bg-white bg-opacity-20 rounded-full p-3 mb-6">
+                <i class="fas fa-heartbeat text-3xl"></i>
+            </div>
+            <h1 class="text-3xl md:text-5xl font-bold mb-4">MANUAL DE USO</h1>
+            <h2 class="text-2xl md:text-3xl font-semibold mb-6">Combo Emagrecimento Natural</h2>
+            <p class="text-xl md:text-2xl opacity-90">Masculino e Feminino</p>
+            <div class="mt-12">
+                <img src="https://images.unsplash.com/photo-1535914254981-b5012eebbd15?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Healthy lifestyle" class="w-32 h-32 mx-auto rounded-full object-cover border-4 border-white shadow-lg">
+            </div>
+        </div>
+    </div>
+
+    <!-- Objective Section -->
+    <div class="py-12 px-4 max-w-4xl mx-auto">
+        <div class="bg-white rounded-xl shadow-md overflow-hidden">
+            <div class="p-8">
+                <div class="flex items-center mb-6">
+                    <div class="bg-blue-100 p-3 rounded-lg mr-4">
+                        <i class="fas fa-bullseye text-blue-500 text-xl"></i>
+                    </div>
+                    <h2 class="text-2xl font-bold text-gray-800">Objetivo dos Combos</h2>
+                </div>
+                <p class="text-lg mb-6">Auxiliar na <span class="font-semibold text-blue-600">redução de gordura corporal</span>, <span class="font-semibold text-green-600">melhora da saciedade</span>, <span class="font-semibold text-purple-600">regulação hormonal</span>, <span class="font-semibold text-yellow-600">aumento de energia</span> e <span class="font-semibold text-red-600">controle de compulsão alimentar</span> com foco na saúde de forma natural.</p>
+                
+                <div class="grid md:grid-cols-2 gap-6 mt-8">
+                    <div class="bg-blue-50 p-6 rounded-lg">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-blue-100 p-2 rounded-full mr-3">
+                                <i class="fas fa-female text-blue-500"></i>
+                            </div>
+                            <h3 class="text-xl font-semibold">Combo Mulher</h3>
+                        </div>
+                        <p class="text-gray-700">Focado nas necessidades hormonais e metabólicas femininas, com suplementos para equilíbrio emocional e saúde da pele.</p>
+                    </div>
+                    
+                    <div class="bg-green-50 p-6 rounded-lg">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-green-100 p-2 rounded-full mr-3">
+                                <i class="fas fa-male text-green-500"></i>
+                            </div>
+                            <h3 class="text-xl font-semibold">Combo Homem</h3>
+                        </div>
+                        <p class="text-gray-700">Otimizado para energia física e desempenho, com ênfase na queima de gordura visceral e vitalidade.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Tabs Navigation -->
+    <div class="max-w-4xl mx-auto px-4">
+        <div class="flex border-b border-gray-200">
+            <button id="womenTab" class="tab-button active py-4 px-6 font-medium text-sm rounded-t-lg">Combo Mulher</button>
+            <button id="menTab" class="tab-button py-4 px-6 font-medium text-sm rounded-t-lg">Combo Homem</button>
+        </div>
+    </div>
+
+    <!-- Women's Combo Content -->
+    <div id="womenContent" class="tab-content py-8 px-4 max-w-4xl mx-auto">
+        <div class="mb-12">
+            <h2 class="text-2xl font-bold mb-6 flex items-center">
+                <i class="fas fa-female text-pink-500 mr-3"></i>
+                COMBO MULHER – 8 Suplementos
+            </h2>
+            
+            <div class="grid md:grid-cols-2 gap-6 mb-8">
+                <!-- Supplement Card 1 -->
+                <div class="supplement-card bg-white p-6 rounded-lg shadow-sm border border-gray-100 transition duration-300">
+                    <div class="flex items-start">
+                        <div class="bg-orange-100 p-3 rounded-lg mr-4">
+                            <i class="fas fa-fire text-orange-500"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-lg mb-1">Laranja Moro</h3>
+                            <p class="text-gray-600">Ação termogênica, queima de gordura abdominal</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Supplement Card 2 -->
+                <div class="supplement-card bg-white p-6 rounded-lg shadow-sm border border-gray-100 transition duration-300">
+                    <div class="flex items-start">
+                        <div class="bg-brown-100 p-3 rounded-lg mr-4">
+                            <i class="fas fa-coffee text-brown-500"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-lg mb-1">Café Verde</h3>
+                            <p class="text-gray-600">Acelera o metabolismo, efeito antioxidante</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Supplement Card 3 -->
+                <div class="supplement-card bg-white p-6 rounded-lg shadow-sm border border-gray-100 transition duration-300">
+                    <div class="flex items-start">
+                        <div class="bg-green-100 p-3 rounded-lg mr-4">
+                            <i class="fas fa-seedling text-green-500"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-lg mb-1">Psyllium</h3>
+                            <p class="text-gray-600">Fonte de fibras, promove saciedade e regula o intestino</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Supplement Card 4 -->
+                <div class="supplement-card bg-white p-6 rounded-lg shadow-sm border border-gray-100 transition duration-300">
+                    <div class="flex items-start">
+                        <div class="bg-teal-100 p-3 rounded-lg mr-4">
+                            <i class="fas fa-water text-teal-500"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-lg mb-1">Spirulina</h3>
+                            <p class="text-gray-600">Fonte de proteína e energia, controla o apetite</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Supplement Card 5 -->
+                <div class="supplement-card bg-white p-6 rounded-lg shadow-sm border border-gray-100 transition duration-300">
+                    <div class="flex items-start">
+                        <div class="bg-purple-100 p-3 rounded-lg mr-4">
+                            <i class="fas fa-moon text-purple-500"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-lg mb-1">Magnésio Dimalato</h3>
+                            <p class="text-gray-600">Relaxamento muscular, equilíbrio emocional e anti-inflamatório</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Supplement Card 6 -->
+                <div class="supplement-card bg-white p-6 rounded-lg shadow-sm border border-gray-100 transition duration-300">
+                    <div class="flex items-start">
+                        <div class="bg-yellow-100 p-3 rounded-lg mr-4">
+                            <i class="fas fa-candy-cane text-yellow-500"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-lg mb-1">Cromo Picolinato</h3>
+                            <p class="text-gray-600">Reduz compulsão por doces e melhora a sensibilidade à insulina</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Supplement Card 7 -->
+                <div class="supplement-card bg-white p-6 rounded-lg shadow-sm border border-gray-100 transition duration-300">
+                    <div class="flex items-start">
+                        <div class="bg-blue-100 p-3 rounded-lg mr-4">
+                            <i class="fas fa-sun text-blue-500"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-lg mb-1">Vitamina D3</h3>
+                            <p class="text-gray-600">Apoia o equilíbrio hormonal e o sistema imunológico</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Supplement Card 8 -->
+                <div class="supplement-card bg-white p-6 rounded-lg shadow-sm border border-gray-100 transition duration-300">
+                    <div class="flex items-start">
+                        <div class="bg-pink-100 p-3 rounded-lg mr-4">
+                            <i class="fas fa-spa text-pink-500"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-lg mb-1">Colágeno Tipo II</h3>
+                            <p class="text-gray-600">Fortalece articulações, auxilia na saúde da pele durante o emagrecimento</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <h3 class="text-xl font-bold mb-6 flex items-center">
+                <i class="fas fa-check-circle text-green-500 mr-3"></i>
+                Modo de Uso – Mulher
+            </h3>
+            
+            <div class="overflow-x-auto">
+                <table class="dosage-table w-full bg-white rounded-lg overflow-hidden shadow-sm">
+                    <thead class="bg-gray-100">
+                        <tr>
+                            <th class="py-3 px-4 text-left">Período do Dia</th>
+                            <th class="py-3 px-4 text-left">Suplemento</th>
+                            <th class="py-3 px-4 text-left">Dosagem & Observações</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="py-3 px-4 font-medium">Manhã</td>
+                            <td class="py-3 px-4">Café Verde</td>
+                            <td class="py-3 px-4">1 cápsula, 30 min antes do café da manhã</td>
+                        </tr>
+                        <tr>
+                            <td class="py-3 px-4"></td>
+                            <td class="py-3 px-4">Spirulina</td>
+                            <td class="py-3 px-4">2 cápsulas, junto com o café da manhã</td>
+                        </tr>
+                        <tr>
+                            <td class="py-3 px-4"></td>
+                            <td class="py-3 px-4">Cromo Picolinato</td>
+                            <td class="py-3 px-4">1 cápsula, 30 min antes do almoço</td>
+                        </tr>
+                        <tr>
+                            <td class="py-3 px-4 font-medium">Almoço</td>
+                            <td class="py-3 px-4">Laranja Moro</td>
+                            <td class="py-3 px-4">1 cápsula, 30 min antes</td>
+                        </tr>
+                        <tr>
+                            <td class="py-3 px-4"></td>
+                            <td class="py-3 px-4">Psyllium</td>
+                            <td class="py-3 px-4">1 cápsula com 1 copo cheio de água</td>
+                        </tr>
+                        <tr>
+                            <td class="py-3 px-4"></td>
+                            <td class="py-3 px-4">Vitamina D3</td>
+                            <td class="py-3 px-4">1 cápsula, logo após a refeição</td>
+                        </tr>
+                        <tr>
+                            <td class="py-3 px-4 font-medium">Jantar</td>
+                            <td class="py-3 px-4">Psyllium</td>
+                            <td class="py-3 px-4">1 cápsula com 1 copo cheio de água</td>
+                        </tr>
+                        <tr>
+                            <td class="py-3 px-4 font-medium">Noite</td>
+                            <td class="py-3 px-4">Magnésio Dimalato</td>
+                            <td class="py-3 px-4">1 cápsula após o jantar</td>
+                        </tr>
+                        <tr>
+                            <td class="py-3 px-4"></td>
+                            <td class="py-3 px-4">Colágeno Tipo II</td>
+                            <td class="py-3 px-4">1 cápsula antes de dormir</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <!-- Men's Combo Content -->
+    <div id="menContent" class="tab-content py-8 px-4 max-w-4xl mx-auto hidden">
+        <div class="mb-12">
+            <h2 class="text-2xl font-bold mb-6 flex items-center">
+                <i class="fas fa-male text-blue-500 mr-3"></i>
+                COMBO HOMEM – 8 Suplementos
+            </h2>
+            
+            <div class="grid md:grid-cols-2 gap-6 mb-8">
+                <!-- Supplement Card 1 -->
+                <div class="supplement-card bg-white p-6 rounded-lg shadow-sm border border-gray-100 transition duration-300">
+                    <div class="flex items-start">
+                        <div class="bg-orange-100 p-3 rounded-lg mr-4">
+                            <i class="fas fa-fire text-orange-500"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-lg mb-1">Laranja Moro</h3>
+                            <p class="text-gray-600">Ação termogênica e redução da gordura visceral</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Supplement Card 2 -->
+                <div class="supplement-card bg-white p-6 rounded-lg shadow-sm border border-gray-100 transition duration-300">
+                    <div class="flex items-start">
+                        <div class="bg-brown-100 p-3 rounded-lg mr-4">
+                            <i class="fas fa-coffee text-brown-500"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-lg mb-1">Café Verde</h3>
+                            <p class="text-gray-600">Estímulo metabólico e energético</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Supplement Card 3 -->
+                <div class="supplement-card bg-white p-6 rounded-lg shadow-sm border border-gray-100 transition duration-300">
+                    <div class="flex items-start">
+                        <div class="bg-green-100 p-3 rounded-lg mr-4">
+                            <i class="fas fa-seedling text-green-500"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-lg mb-1">Psyllium</h3>
+                            <p class="text-gray-600">Fibras naturais para saciedade e função intestinal</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Supplement Card 4 -->
+                <div class="supplement-card bg-white p-6 rounded-lg shadow-sm border border-gray-100 transition duration-300">
+                    <div class="flex items-start">
+                        <div class="bg-teal-100 p-3 rounded-lg mr-4">
+                            <i class="fas fa-water text-teal-500"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-lg mb-1">Spirulina</h3>
+                            <p class="text-gray-600">Energia e reposição proteica</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Supplement Card 5 -->
+                <div class="supplement-card bg-white p-6 rounded-lg shadow-sm border border-gray-100 transition duration-300">
+                    <div class="flex items-start">
+                        <div class="bg-purple-100 p-3 rounded-lg mr-4">
+                            <i class="fas fa-moon text-purple-500"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-lg mb-1">Magnésio Dimalato</h3>
+                            <p class="text-gray-600">Redução de estresse e melhora da disposição física</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Supplement Card 6 -->
+                <div class="supplement-card bg-white p-6 rounded-lg shadow-sm border border-gray-100 transition duration-300">
+                    <div class="flex items-start">
+                        <div class="bg-yellow-100 p-3 rounded-lg mr-4">
+                            <i class="fas fa-candy-cane text-yellow-500"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-lg mb-1">Cromo Picolinato</h3>
+                            <p class="text-gray-600">Controle da compulsão alimentar</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Supplement Card 7 -->
+                <div class="supplement-card bg-white p-6 rounded-lg shadow-sm border border-gray-100 transition duration-300">
+                    <div class="flex items-start">
+                        <div class="bg-red-100 p-3 rounded-lg mr-4">
+                            <i class="fas fa-bolt text-red-500"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-lg mb-1">Panax Ginseng</h3>
+                            <p class="text-gray-600">Aumento da energia e libido, melhora da circulação</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Supplement Card 8 -->
+                <div class="supplement-card bg-white p-6 rounded-lg shadow-sm border border-gray-100 transition duration-300">
+                    <div class="flex items-start">
+                        <div class="bg-blue-100 p-3 rounded-lg mr-4">
+                            <i class="fas fa-sun text-blue-500"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-lg mb-1">Vitamina D3</h3>
+                            <p class="text-gray-600">Suporte imunológico e hormonal</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <h3 class="text-xl font-bold mb-6 flex items-center">
+                <i class="fas fa-check-circle text-green-500 mr-3"></i>
+                Modo de Uso – Homem
+            </h3>
+            
+            <div class="overflow-x-auto">
+                <table class="dosage-table w-full bg-white rounded-lg overflow-hidden shadow-sm">
+                    <thead class="bg-gray-100">
+                        <tr>
+                            <th class="py-3 px-4 text-left">Período do Dia</th>
+                            <th class="py-3 px-4 text-left">Suplemento</th>
+                            <th class="py-3 px-4 text-left">Dosagem & Observações</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="py-3 px-4 font-medium">Manhã</td>
+                            <td class="py-3 px-4">Café Verde</td>
+                            <td class="py-3 px-4">1 cápsula, 30 min antes do café da manhã</td>
+                        </tr>
+                        <tr>
+                            <td class="py-3 px-4"></td>
+                            <td class="py-3 px-4">Spirulina</td>
+                            <td class="py-3 px-4">2 cápsulas, junto com o café da manhã</td>
+                        </tr>
+                        <tr>
+                            <td class="py-3 px-4"></td>
+                            <td class="py-3 px-4">Panax Ginseng</td>
+                            <td class="py-3 px-4">1 cápsula, junto com o café da manhã</td>
+                        </tr>
+                        <tr>
+                            <td class="py-3 px-4"></td>
+                            <td class="py-3 px-4">Cromo Picolinato</td>
+                            <td class="py-3 px-4">1 cápsula, 30 min antes do almoço</td>
+                        </tr>
+                        <tr>
+                            <td class="py-3 px-4 font-medium">Almoço</td>
+                            <td class="py-3 px-4">Laranja Moro</td>
+                            <td class="py-3 px-4">1 cápsula, 30 min antes</td>
+                        </tr>
+                        <tr>
+                            <td class="py-3 px-4"></td>
+                            <td class="py-3 px-4">Psyllium</td>
+                            <td class="py-3 px-4">1 cápsula com 1 copo cheio de água</td>
+                        </tr>
+                        <tr>
+                            <td class="py-3 px-4"></td>
+                            <td class="py-3 px-4">Vitamina D3</td>
+                            <td class="py-3 px-4">1 cápsula após o almoço</td>
+                        </tr>
+                        <tr>
+                            <td class="py-3 px-4 font-medium">Jantar</td>
+                            <td class="py-3 px-4">Psyllium</td>
+                            <td class="py-3 px-4">1 cápsula com 1 copo cheio de água</td>
+                        </tr>
+                        <tr>
+                            <td class="py-3 px-4 font-medium">Noite</td>
+                            <td class="py-3 px-4">Magnésio Dimalato</td>
+                            <td class="py-3 px-4">1 cápsula após o jantar</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contraindications Section -->
+    <div class="py-12 px-4 max-w-4xl mx-auto">
+        <div class="bg-white rounded-xl shadow-md overflow-hidden">
+            <div class="p-8">
+                <div class="flex items-center mb-6">
+                    <div class="bg-red-100 p-3 rounded-lg mr-4 warning-pulse">
+                        <i class="fas fa-exclamation-triangle text-red-500 text-xl"></i>
+                    </div>
+                    <h2 class="text-2xl font-bold text-gray-800">Contraindicações (Ambos os Combos)</h2>
+                </div>
+                <p class="mb-6 text-gray-700">Evite o uso em caso de:</p>
+                
+                <div class="grid md:grid-cols-2 gap-4">
+                    <div class="flex items-start">
+                        <div class="flex-shrink-0 mt-1">
+                            <div class="flex items-center justify-center h-6 w-6 rounded-full bg-red-100">
+                                <i class="fas fa-times text-red-500 text-sm"></i>
+                            </div>
+                        </div>
+                        <p class="ml-3 text-gray-700">Gravidez ou amamentação (sem orientação médica)</p>
+                    </div>
+                    
+                    <div class="flex items-start">
+                        <div class="flex-shrink-0 mt-1">
+                            <div class="flex items-center justify-center h-6 w-6 rounded-full bg-red-100">
+                                <i class="fas fa-times text-red-500 text-sm"></i>
+                            </div>
+                        </div>
+                        <p class="ml-3 text-gray-700">Hipertensão não controlada (atenção ao Café Verde e Ginseng)</p>
+                    </div>
+                    
+                    <div class="flex items-start">
+                        <div class="flex-shrink-0 mt-1">
+                            <div class="flex items-center justify-center h-6 w-6 rounded-full bg-red-100">
+                                <i class="fas fa-times text-red-500 text-sm"></i>
+                            </div>
+                        </div>
+                        <p class="ml-3 text-gray-700">Problemas cardíacos ou renais graves</p>
+                    </div>
+                    
+                    <div class="flex items-start">
+                        <div class="flex-shrink-0 mt-1">
+                            <div class="flex items-center justify-center h-6 w-6 rounded-full bg-red-100">
+                                <i class="fas fa-times text-red-500 text-sm"></i>
+                            </div>
+                        </div>
+                        <p class="ml-3 text-gray-700">Alergia a algum componente (ex: colágeno de origem animal)</p>
+                    </div>
+                    
+                    <div class="flex items-start">
+                        <div class="flex-shrink-0 mt-1">
+                            <div class="flex items-center justify-center h-6 w-6 rounded-full bg-red-100">
+                                <i class="fas fa-times text-red-500 text-sm"></i>
+                            </div>
+                        </div>
+                        <p class="ml-3 text-gray-700">Uso contínuo de medicamentos (consultar um médico)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Side Effects Section -->
+    <div class="py-12 px-4 max-w-4xl mx-auto">
+        <div class="bg-white rounded-xl shadow-md overflow-hidden">
+            <div class="p-8">
+                <div class="flex items-center mb-6">
+                    <div class="bg-yellow-100 p-3 rounded-lg mr-4">
+                        <i class="fas fa-info-circle text-yellow-500 text-xl"></i>
+                    </div>
+                    <h2 class="text-2xl font-bold text-gray-800">Efeitos Colaterais Possíveis</h2>
+                </div>
+                
+                <div class="overflow-x-auto">
+                    <table class="w-full bg-white rounded-lg overflow-hidden shadow-sm">
+                        <thead class="bg-gray-100">
+                            <tr>
+                                <th class="py-3 px-4 text-left">Suplemento</th>
+                                <th class="py-3 px-4 text-left">Possíveis Reações Leves</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="py-3 px-4 font-medium">Café Verde</td>
+                                <td class="py-3 px-4">Insônia, taquicardia, agitação</td>
+                            </tr>
+                            <tr>
+                                <td class="py-3 px-4 font-medium">Psyllium</td>
+                                <td class="py-3 px-4">Gases, distensão abdominal sem água suficiente</td>
+                            </tr>
+                            <tr>
+                                <td class="py-3 px-4 font-medium">Spirulina</td>
+                                <td class="py-3 px-4">Diarreia leve nos primeiros dias</td>
+                            </tr>
+                            <tr>
+                                <td class="py-3 px-4 font-medium">Cromo</td>
+                                <td class="py-3 px-4">Náusea leve, especialmente em jejum</td>
+                            </tr>
+                            <tr>
+                                <td class="py-3 px-4 font-medium">Ginseng</td>
+                                <td class="py-3 px-4">Irritabilidade ou nervosismo em doses altas</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                
+                <div class="mt-6 bg-blue-50 border-l-4 border-blue-500 p-4">
+                    <div class="flex">
+                        <div class="flex-shrink-0">
+                            <i class="fas fa-lightbulb text-blue-500"></i>
+                        </div>
+                        <div class="ml-3">
+                            <p class="text-sm text-blue-700">
+                                <span class="font-semibold">Obs.:</span> São reações raras e geralmente passageiras. Em caso de persistência, suspenda o uso.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Safety Warnings Section -->
+    <div class="py-12 px-4 max-w-4xl mx-auto">
+        <div class="bg-white rounded-xl shadow-md overflow-hidden">
+            <div class="p-8">
+                <div class="flex items-center mb-6">
+                    <div class="bg-green-100 p-3 rounded-lg mr-4">
+                        <i class="fas fa-shield-alt text-green-500 text-xl"></i>
+                    </div>
+                    <h2 class="text-2xl font-bold text-gray-800">Avisos de Segurança</h2>
+                </div>
+                
+                <div class="space-y-4">
+                    <div class="flex items-start">
+                        <div class="flex-shrink-0 mt-1">
+                            <div class="flex items-center justify-center h-6 w-6 rounded-full bg-blue-100">
+                                <i class="fas fa-check text-blue-500 text-sm"></i>
+                            </div>
+                        </div>
+                        <p class="ml-3 text-gray-700">Beba <span class="font-semibold">mínimo 2 litros de água por dia</span>.</p>
+                    </div>
+                    
+                    <div class="flex items-start">
+                        <div class="flex-shrink-0 mt-1">
+                            <div class="flex items-center justify-center h-6 w-6 rounded-full bg-blue-100">
+                                <i class="fas fa-check text-blue-500 text-sm"></i>
+                            </div>
+                        </div>
+                        <p class="ml-3 text-gray-700">Não exceda as dosagens recomendadas.</p>
+                    </div>
+                    
+                    <div class="flex items-start">
+                        <div class="flex-shrink-0 mt-1">
+                            <div class="flex items-center justify-center h-6 w-6 rounded-full bg-blue-100">
+                                <i class="fas fa-check text-blue-500 text-sm"></i>
+                            </div>
+                        </div>
+                        <p class="ml-3 text-gray-700">Armazene em local seco e arejado, longe da luz.</p>
+                    </div>
+                    
+                    <div class="flex items-start">
+                        <div class="flex-shrink-0 mt-1">
+                            <div class="flex items-center justify-center h-6 w-6 rounded-full bg-blue-100">
+                                <i class="fas fa-check text-blue-500 text-sm"></i>
+                            </div>
+                        </div>
+                        <p class="ml-3 text-gray-700">Faça pausa de 10 a 15 dias após 90 dias de uso contínuo.</p>
+                    </div>
+                    
+                    <div class="flex items-start">
+                        <div class="flex-shrink-0 mt-1">
+                            <div class="flex items-center justify-center h-6 w-6 rounded-full bg-blue-100">
+                                <i class="fas fa-check text-blue-500 text-sm"></i>
+                            </div>
+                        </div>
+                        <p class="ml-3 text-gray-700">Não substitui alimentação equilibrada ou prática de atividades físicas.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Final Notes -->
+    <div class="py-12 px-4 max-w-4xl mx-auto text-center">
+        <div class="bg-blue-50 rounded-xl p-8">
+            <i class="fas fa-stethoscope text-blue-500 text-4xl mb-6"></i>
+            <h2 class="text-2xl font-bold mb-4">Recomendação Profissional</h2>
+            <p class="text-gray-700 mb-6">Para melhores resultados, combine o uso dos suplementos com uma alimentação balanceada e atividade física regular.</p>
+            <p class="text-gray-600">Em caso de dúvidas sobre interações medicamentosas ou condições específicas de saúde, consulte um médico ou nutricionista.</p>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-8 px-4">
+        <div class="max-w-4xl mx-auto">
+            <div class="text-center mb-6">
+                <p class="text-xl font-bold">Combo Emagrecimento Natural</p>
+                <p class="text-gray-400">Suplementação inteligente para saúde e bem-estar</p>
+            </div>
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <p class="text-gray-400 text-sm">© 2023 Todos os direitos reservados.</p>
+                </div>
+                <div class="flex space-x-4">
+                    <a href="#" class="text-gray-400 hover:text-white">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="text-center mt-8 text-gray-500 text-xs">
+                <p>Este produto não substitui o acompanhamento médico ou nutricional.</p>
+                <p class="mt-1"><a href="#" class="underline">Termos de Uso</a> | <a href="#" class="underline">Política de Privacidade</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Tab functionality
+        const womenTab = document.getElementById('womenTab');
+        const menTab = document.getElementById('menTab');
+        const womenContent = document.getElementById('womenContent');
+        const menContent = document.getElementById('menContent');
+        
+        womenTab.addEventListener('click', () => {
+            womenTab.classList.add('active');
+            menTab.classList.remove('active');
+            womenContent.classList.remove('hidden');
+            menContent.classList.add('hidden');
+        });
+        
+        menTab.addEventListener('click', () => {
+            menTab.classList.add('active');
+            womenTab.classList.remove('active');
+            menContent.classList.remove('hidden');
+            womenContent.classList.add('hidden');
+        });
+        
+        // Print button functionality (could be added)
+        // document.getElementById('printButton').addEventListener('click', () => {
+        //     window.print();
+        // });
+    </script>
+</body>
+</html>
